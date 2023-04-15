@@ -1,0 +1,289 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  color: $color-txt-white
+  background-color: $color-bg-blue
+
+a
+  color: inherit
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+ul
+  list-style: none
+
+.menu
+  font-family: 'RotondaC', sans-serif
+  font-size: 14px
+  line-height: auto
+
+h1
+  font-family: 'RotondaC-b', sans-serif
+  font-size: 30px
+  line-height: auto
+
+h2
+  font-family: 'RotondaC-b', sans-serif
+  font-size: 26px
+  line-height: auto
+
+.big_text
+  font-family: 'RotondaC', sans-serif
+  font-size: 18px
+  line-height: 22px
+
+.text
+  font-family: 'RotondaC', sans-serif
+  font-size: 16px
+  line-height: 20px
+
+.important_text
+  font-family: 'RotondaC-b', sans-serif
+
+.container
+  max-width: 1290px
+  padding: 0 20px
+  margin: 0 auto
+
+.header
+  background-color: $color-bg-blue
+
+  &-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .logo
+    height: 116px
+
+.menu
+  .ham
+    display: none
+
+    box-sizing: border-box
+    width: 46px
+    height: 46px
+    padding: 14px 12px
+
+    background-color: $color-accent-yellow
+    border-radius: 20px
+    transition: all .4s
+    &:hover
+      background-color: $color-accent-pink
+    span
+      display: block
+
+      width: 21px
+      height: 3px
+      background-color: $color-bg-white
+      border-radius: 3px
+
+      transition: all .4s
+      &:nth-of-type(n+2)
+        margin-top: 4px
+
+  &-items
+    display: flex
+
+  &__item
+    text-transform: uppercase
+    &:nth-of-type(n+2)
+      margin-left: 26px
+
+.main-info
+  position: relative
+
+  .container
+    position: relative
+
+    padding-top: 117px
+    padding-bottom: 240px
+
+    &::before
+      position: absolute
+      z-index: -2
+      content: ''
+
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+
+      background: url(../img/main.png) no-repeat top 24px left 588px
+
+  &__heading
+    text-transform: uppercase
+    max-width: 625px
+
+    margin-bottom: 20px
+    &_mobile
+      display: none
+
+  &__text
+    max-width: 515px
+
+    margin-bottom: 37px
+    &_mobile
+      display: none
+
+  .down
+    border: none
+    background: none
+
+    fill: $color-txt-white
+    &:hover
+      fill: $color-accent-yellow
+    &-icon
+      fill: inherit
+      width: 30px
+      height: 26px
+
+      transition: all .2s
+
+  &_bg
+    z-index: -2
+    position: absolute
+    top: 332px
+    left: 0
+    fill: $color-bg-white
+    width: 100%
+    height: 1106px
+
+.about
+  .container
+    padding-top: 175px
+    position: relative
+
+  &-wrapper
+    position: relative
+
+    box-sizing: border-box
+    max-width: 737px
+
+    padding: 110px 0 0 100px
+    margin: 0 110px 144px auto
+
+    &::after
+      position: absolute
+      content: ''
+      top: -105px
+      left: -270px
+
+      width: 350px
+      height: 460px
+
+      background: url(../img/ping.png) no-repeat center
+
+    &::before
+      z-index: -1
+      position: absolute
+      content: ''
+      top: -135px
+      right: 85px
+
+      background: url(../img/feather.png) no-repeat center
+      width: 232px
+      height: 323px
+
+  &__heading
+    max-width: 514px
+    text-transform: uppercase
+    margin-bottom: 20px
+
+  &__text
+    max-width: 514px
+
+    &:nth-of-type(n+2)
+      margin-top: 15px
+    &_mobile
+      display: none
+
+  &_bg
+    position: absolute
+    z-index: -1
+    top: 0px
+    left: 0px
+
+    width: 739px
+    height: 442px
+
+    fill: $color-accent-pink
+
+  &-addition
+    display: flex
+
+    &__text
+      align-self: center
+      max-width: 471px
+      margin-left: 19px
+
+      color: $color-txt-blue
+
+  .exclamation
+    width: 25px
+    height: 77px
+
+.hearts
+  position: absolute
+  fill-opacity: .15
+  &_white
+    fill: $color-bg-white
+  &_blue
+    fill: $color-bg-blue
+  &_one
+    width: 203px
+    height: 188px
+
+    top: 75px
+    left: -55px
+    transform: rotate(-14deg)
+  &_two
+    width: 64px
+    height: 60px
+
+    top: 360px
+    left: 310px
+    transform: matrix(-0.97, 0.26, 0.26, 0.97, 0, 0)
+  &_three
+    width: 112px
+    height: 104px
+
+    top: 295px
+    left: 427px
+    transform: matrix(-0.97, -0.24, -0.24, 0.97, 0, 0)
+  &_four
+    z-index: -3
+    width: 203px
+    height: 188px
+
+    top: 0px
+    right: 50px
+    transform: matrix(-0.97, -0.24, -0.24, 0.97, 0, 0)
+  &_five
+    z-index: -1
+    width: 135px
+    height: 125px
+
+    top: 95px
+    left: 20px
+    transform: rotate(-14deg)
+  &_six
+    width: 158px
+    height: 145px
+
+    top: -70px
+    right: 135px
+    transform: rotate(-14deg)
+  &_seven
+    z-index: -2
+    fill-opacity: .4
+
+    width: 98px
+    height: 91px
+
+    top: 140px
+    right: 50px
+    transform: matrix(-0.97, -0.24, -0.24, 0.97, 0, 0)

@@ -1,0 +1,263 @@
+@media ( max-width: 1180px )
+
+  .container
+    max-width: 768px
+
+  .header
+    position: relative
+    &-container
+    .logo
+      height: 54px
+
+  .menu
+    &-items
+      position: absolute
+      z-index: 10
+      right: 0
+      top: 0
+
+      flex-direction: column
+
+      width: 100%
+      max-height: 0
+
+      background-color: $color-bg-white
+      border-radius: 0 0 30px 30px
+
+      overflow: hidden
+
+      transition: all .8s
+      &_active
+        padding: 75px 0 50px 0
+        max-height: 360px
+
+    &__item
+      color: $color-mobile-menu
+      text-align: center
+
+      transition: all .4s
+      &:nth-of-type(n+2)
+        margin-left: 0
+        margin-top: 30px
+      &:hover
+        color: $color-accent-pink
+
+    .ham
+      display: block
+      position: relative
+      z-index: 100
+
+      &_active
+        height: 46px
+        padding: 21px 11px
+        span
+          width: 24px
+
+          transition: all .4s
+          &:nth-of-type(n+2)
+            margin-top: -2px
+          &:nth-of-type(1)
+            transform: rotate(-45deg)
+          &:nth-of-type(2)
+            display: none
+          &:nth-of-type(3)
+            transform: rotate(45deg)
+
+  .main-info
+    .container
+      &::before
+        content: none
+    &_bg
+      width: 100%
+      height: 1006px
+  .about
+    overflow-x: hidden
+    background-color: $color-bg-white
+    position: relative
+    z-index: 0
+    .container
+
+      padding-bottom: 40px
+    &-wrapper
+      margin: 0 110px 164px auto
+      &::after
+        top: -185px
+        left: 30px
+
+        width: 180px
+        height: 247px
+
+        background: url(../img/ping.png) no-repeat center
+        background-size: contain
+      &::before
+        top: -130px
+        right: 0px
+    &-addition
+      display: flex
+      justify-content: center
+
+  .hearts
+    &_five
+      z-index: -1
+
+      top: 30px
+      left: 0
+    &_six
+      top: 5px
+      right: 95px
+    &_seven
+      z-index: -2
+
+      top: 160px
+      right: 30px
+
+@media ( max-width: 660px )
+  .container
+    max-width: 620px
+
+  .about
+    &-wrapper
+      margin: 0 10px 164px 0
+      padding: 90px 0 0 90px
+      &::before
+        content: none
+    &__heading
+      max-width: 514px
+      text-transform: uppercase
+      margin-bottom: 20px
+
+    &__text
+      max-width: 554px
+
+      &:nth-of-type(n+2)
+        margin-top: 15px
+
+@media ( max-width: 490px )
+  .container
+    max-width: 280px
+
+  .main-info
+    overflow: hidden
+    .container
+      padding-top: 27px
+      padding-bottom: 140px
+
+      &::before
+        position: absolute
+        z-index: -2
+        content: ''
+        width: 260px
+        height: 180px
+
+        bottom: 10px
+        right: 20px
+        top: unset
+        left: unset
+
+        background: url(../img/mainMobile.png) no-repeat
+        background-size: cover
+
+    &__heading
+      display: none
+
+      &_mobile
+        width: 100%
+        display: block
+        margin-bottom: 12px
+
+        font-size: 24px
+
+    &__text
+      display: none
+
+      &_mobile
+        display: block
+        width: 100%
+        margin-bottom: 24px
+
+        font-size: 16px
+
+    &_bg
+      z-index: -2
+      position: absolute
+      top: 430px
+      left: 0px
+      fill: $color-bg-white
+      width: 840px
+      height: 484px
+
+      transform: translateX(-345px)
+
+  .about
+    .container
+      padding-top: 297px
+
+    &-wrapper
+      padding: 0
+      margin: 0
+      margin-bottom: 85px
+
+      &::after
+        top: -270px
+        left: 0
+
+    &__heading
+      font-size: 22px
+      margin-bottom: 12px
+
+      max-width: 100%
+
+    &__text
+      display: none
+      &_mobile
+        display: block
+        max-width: 100%
+        font-size: 16px
+        &:nth-of-type(n+2)
+          margin-top: 15px
+
+    &_bg
+      top: -65px
+      left: -236px
+
+    &-addition
+      &__text
+        max-width: 230px
+        margin-left: 25px
+
+        color: $color-gray
+        font-family: 'RotondaC', sans-serif
+
+    .exclamation
+      width: 25px
+      height: 77px
+
+  .hearts
+    &_one
+      width: 150px
+      height: 138px
+
+      top: 125px
+      right: -5px
+      left: unset
+      transform: rotate(-14deg)
+    &_two
+      display: none
+    &_three
+      display: none
+    &_four
+      display: none
+    &_five
+      display: none
+    &_six
+      width: 125px
+      height: 115px
+
+      top: 10px
+      right: 20px
+    &_seven
+      width: 67px
+      height: 62px
+
+      top: 155px
+      right: 30px
